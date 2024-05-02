@@ -53,8 +53,8 @@ int	main(void)
 	f = ft_printf("%i\n", 2147483647);
 	c = printf("%i\n", 2147483647);
 	printf("ft len is %d, cl len is %d\n\n", f, c);
-	f = ft_printf("%i\n", -2147483648);
-	c = printf("%i\n", -2147483648);
+	f = ft_printf("%i\n", -2147483647 - 1);
+	c = printf("%i\n", -2147483647 - 1);
 	printf("ft len is %d, cl len is %d\n\n", f, c);
 /* DEC TESTS */
 	printf("DECIMAL TESTS\n\n");
@@ -67,8 +67,8 @@ int	main(void)
 	f = ft_printf("%d\n", -1);
 	c = printf("%d\n", -1);
 	printf("ft len is %d, cl len is %d\n\n", f, c);
-	f = ft_printf("%d\n", -2147483648);
-	c = printf("%d\n", -2147483648);
+	f = ft_printf("%d\n", -2147483647 - 1);
+	c = printf("%d\n", -2147483647 - 1);
 	printf("ft len is %d, cl len is %d\n\n", f, c);
 	f = ft_printf("%d\n", 2147483647);
 	c = printf("%d\n", 2147483647);
@@ -133,9 +133,6 @@ int	main(void)
 	printf("ft len is %d, cl len is %d\n\n", f, c);
 /* % TESTS */
 	printf("PERCENTSIGN TESTS\n\n");
-	f = ft_printf("%%%\n");
-	c = printf("%%%\n");
-	printf("ft len is %d, cl len is %d\n\n", f, c);
 	f = ft_printf("%%\n");
 	c = printf("%%\n");
 	printf("ft len is %d, cl len is %d\n\n", f, c);
