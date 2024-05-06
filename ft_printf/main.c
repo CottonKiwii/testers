@@ -136,5 +136,10 @@ int	main(void)
 	f = ft_printf("%%\n");
 	c = printf("%%\n");
 	printf("ft len is %d, cl len is %d\n\n", f, c);
+	f = ft_printf("%");
+	printf("\n");
+	c = printf("%");
+	printf("\n");
+	printf("ft len is %d, cl len is %d\n\n", f, c);
 	return (0);
 }
