@@ -11,3 +11,4 @@ Although it is recommended to write your own, you can use these for reference on
 1) Put everything in your get_next_line directory
 2) For Mandatory part, use: `cc -D BUFFER_SIZE=n main.c get_next_line.c get_next_line_utils.c -I.`
 3) For Bonus part, use: `cc -D BUFFER_SIZE=n main_bonus.c get_next_line_bonus.c get_next_line_utils_bonus.c -I.`
+   - Disclaimer: My bonus main file doesn't work properly with `funcheck -a ./a.out`!
